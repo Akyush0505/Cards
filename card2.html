@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        
+    }
+    #cancel{
+        text-decoration: none;
+        color: black;
+        
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .container{
+        height: 100vh;
+        width:100vw;
+         background-color: rgba(96, 165, 221, 0.678); 
+         display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    }
+    .card{
+        width: 25%;
+            height:75%;
+            background-color: white;
+        border-radius: 10px ;
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+       align-items: center;
+    }
+    #box1img
+    {
+        height:25%;
+        width:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 3px groove black;
+        border-style: groove;
+     
+    }
+    #boximg
+    {
+        height:20px;
+        width:25px;
+    }
+    .boxsum
+    {
+       
+         
+        width:70%;
+        height:30%;
+        
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        gap:15px;
+        text-align: center;
+        
+        
+        
+
+    }
+    #box
+    {
+
+        padding:10px;
+        border-radius: 8px;
+        width:85%;
+        height:10%;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       background-color: rgba(169, 207, 238, 0.979); 
+
+    }
+    button{
+        width: 80%;
+        height:10%;
+        border-radius: 8px;
+        background-color: rgba(10, 10, 77, 0.993);
+        box-shadow: 0 7px 25px rgba(10, 10, 77, 0.993);;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <img id="box1img" src="Apple-Music-Logo-2015-present.png" alt="">
+            <div class="boxsum"><h3>Order Summary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas sit totam blanditiis adipisci facere debitis perferendis numquam culpa, quaerat ea?</p></div>
+            
+            <div id="box">
+                <table >
+                    <tr>
+                        <td rowspan="2" style="width: 30px;">
+                            <img id="boximg" src="apple-music-note.jpg" alt="">
+                        </td>
+                        <td>
+                            Annual Plan
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            $99.9/year
+                        </td>
+                    </tr>
+                </table>
+                <a href="">Change</a>
+                
+
+            </div>
+            <button>
+                Proceed to Payment
+            </button>
+            <a id="cancel" href="">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
